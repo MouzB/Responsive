@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>Registrera dig</h2>
+    <div class="formContainer">
+     <form action="https://httpbin.org/anything" method="post">
+       
+        <div class="firstName"> 
+            <label for="firstName">First Name</label>
+            <input name="firstName" type="text" /> 
+        </div>
+
+        <div class="lastName">
+            <label for="lastName">Last Name</label>
+            <input name="lastName" type="text" /> 
+        </div>
+
+        <div class="userName"> 
+            <label for="userName">Username</label>
+            <input name="userName" type="text" /> 
+        </div>
+
+        <div class="password">
+            <label for="password">Password</label>
+            <input name="password" type="password" /> 
+        </div>
+
+        <div class="email"> 
+            <label for="email">Email</label>
+            <input name="email" type="email" /> 
+        </div>
+
+        <div class="message">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message"></textarea>
+        </div>
+
+        <div class="cat">
+            <label for="catSelect">Choose a cat</label>
+            <select name="cat" id="catSelect" required>
+                <option value="">Please choose a cat</option>
+                <option value="kattunge">Kattunge</option>
+                <option value="junior">Junior</option>
+                <option value="vuxen">Vuxen</option>
+                <option value="medelålders">Medelålders</option>
+            </select>
+        </div><br>
+
+        <div class="checkbox">
+            <label for="godkännvillkoren"> Godkänn villkoren</label>
+            <input type="checkbox" id="godkännvillkoren">
+        </div>
+
+
+    
+        <div class="send">
+            <button type="submit">Skicka</button> 
+        </div>
+
+        
+     </form> 
+    </div>
+
+    
+</body>
+</html>
